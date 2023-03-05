@@ -1,0 +1,16 @@
+<div class="row">
+  <% products.forEach(product => { %>
+  <div class="col-md-3">
+    <div class="card">
+        <img src="<%= images %>" class="card-img-top" alt="..." width="25" height="">
+        <div class="card-body">
+          <h5 class="card-title"><%= product %></h5>
+          <p class="card-text">$10.00</p>
+          <a href="\product" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+  </div>
+  <% }) %>
+  </div>
+
+      

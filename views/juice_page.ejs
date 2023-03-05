@@ -1,0 +1,31 @@
+<%- include("partials/header"); -%>
+    <!-- Product Section -->
+	<section class="product-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="<%= image %>" class="img-fluid" alt="Juice Product">
+				</div>
+				<div class="col-md-6">
+					<h2 class="product-title"><%= product %></h2>
+					<p class="product-price">$5.99</p>
+					<p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id velit id sapien eleifend ultrices. Sed congue nibh in sem placerat consectetur. Nam efficitur tortor et magna posuere, sed maximus ante lacinia.</p>
+					<div class="product-variants">
+						<label for="size">Size:</label>
+						<select class="custom-select" id="size">
+							<option selected>Choose...</option>
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<label for="quantity">Quantity:</label>
+						<input type="number" class="form-control" id="quantity" value="1">
+					</div>
+					<button class="btn btn-primary btn-lg btn-block mt-4">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+	</section>
+    <%- include("similar"); -%>
+    <%- include("partials/footer"); -%>
+
